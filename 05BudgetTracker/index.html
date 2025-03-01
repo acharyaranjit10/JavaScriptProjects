@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Tracker</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <input type="text" id="transaction-name" placeholder="Transaction Name">
+            <input type="number" id="transaction-amount" placeholder="Amount">
+            <select id="transaction-category">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button id="add-transaction">Add Transaction</button>
+        </div>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <label for="filter-category">Filter by Category:</label>
+            <select id="filter-category">
+                <option value="all">All</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <button id="clear-filters">Clear Filters</button>
+        </div>
+
+        <!-- Transactions List -->
+        <h2>Transactions</h2>
+        <ul id="transactions-list"></ul>
+
+        <!-- Balance Section -->
+        <div class="balance-section">
+            <h3>Total Balance: <span id="total-balance">0</span></h3>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

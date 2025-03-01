@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#task-manager {
+    margin-top: 20px;
+}
+
+input, select, button {
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+
+button.complete-btn {
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+button#clear-completed {
+    margin-top: 10px;
+}

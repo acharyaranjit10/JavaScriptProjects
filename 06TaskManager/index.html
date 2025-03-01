@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app-container">
+        <h1>Task Manager</h1>
+
+        <!-- User Authentication -->
+        <div id="auth-section">
+            <input type="text" id="username-input" placeholder="Username">
+            <input type="password" id="password-input" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <button id="logout-btn">Logout</button>
+        </div>
+
+        <div id="task-manager">
+            <input type="text" id="task-input" placeholder="Enter task description">
+            <select id="task-filter">
+                <option value="all">All Tasks</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+            </select>
+            <select id="filter-category">
+                <option value="all">All Categories</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+            </select>
+            <button id="add-task">Add Task</button>
+
+            <ul id="task-list"></ul>
+
+            <button id="clear-completed">Clear Completed Tasks</button>
+            <p id="task-counter">Active Tasks: 0</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

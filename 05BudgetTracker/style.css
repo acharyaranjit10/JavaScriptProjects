@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#transactions-list {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.transaction-item.income {
+    background-color: #e6f7e6;
+}
+
+.transaction-item.expense {
+    background-color: #f2d7d5;
+}
+
+button.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button.delete-btn:hover {
+    background-color: #e60000;
+}
+
+.balance-section {
+    margin-top: 20px;
+}
