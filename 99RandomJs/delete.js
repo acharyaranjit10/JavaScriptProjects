@@ -1,4 +1,4 @@
-// Quote Generator with Local Storage
+// Quote Generator in Local Storage
 const quotes = [
     "The only way to do great work is to love what you do. – Steve Jobs",
     "Life is what happens when you're busy making other plans. – John Lennon",
