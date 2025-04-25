@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman Game  - Ranjit</title>
+    <title>Hangman Game - Ranjit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="word-list.js" defer></script>
-    <script src="index.js" defer></script>
 </head>
 <body>
     <div class="game-modal">
         <div class="content">
-            <img src="#" alt="gif">
+            <img src="images/lost.gif" alt="game result">
             <h4>Game Over!</h4>
             <p>The correct word was: <b>rainbow</b></p>
             <button class="play-again">Play Again</button>
@@ -19,15 +18,21 @@
     </div>
     <div class="container">
         <div class="hangman-box">
-            <img src="#" draggable="false" alt="hangman-img">
-            <h1>Hangman Game</h1>
+            <img src="images/hangman-0.svg" draggable="false" alt="hangman progress">
+            <h1>Hangman</h1>
         </div>
         <div class="game-box">
             <ul class="word-display"></ul>
             <h4 class="hint-text">Hint: <b></b></h4>
-            <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
-            <div class="keyboard"></div>
+            <h4 class="guesses-text">Incorrect guesses: <b>0 / 6</b></h4>
+            <div class="keyboard-container">
+                <div class="keyboard"></div>
+            </div>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/word-list.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

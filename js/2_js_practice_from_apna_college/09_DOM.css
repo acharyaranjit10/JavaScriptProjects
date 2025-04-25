@@ -1,0 +1,11 @@
+.para{
+    background-color: yellow;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+.new{
+    color: red;
+    background-color: green;
+}

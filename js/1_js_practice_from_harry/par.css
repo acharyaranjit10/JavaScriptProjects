@@ -1,0 +1,43 @@
+.nav{
+    display: flex;
+    background-color: pink;
+    justify-content: space-evenly;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+
+}
+.box{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+background-color: rgb(208, 208, 188);
+}
+@media (min-width:200px){
+    .box{
+        background-color: pink;
+    }
+}
+@media (max-width:800px){
+    .box{
+        background-color: rgb(239, 186, 186);
+    }
+}
+@media(min-width:400px) and (max-width:500px)
+{
+    .box{
+        background-color: yellow;
+    }
+    
+}
